@@ -1,2 +1,0 @@
-<?php exit(0); ?>
-{"sucuriscan_plugin_version":"1.8.3","sucuriscan_api_key":"dc0f1ded4ad6e7148f83f488f3a4fc81","sucuriscan_dns_lookups":"disabled","sucuriscan_runtime":"1477543205","sucuriscan_use_wpmail":"disabled","sucuriscan_lastlogin_redirection":"disabled","sucuriscan_notify_success_login":"disabled","sucuriscan_notify_failed_login":"disabled","sucuriscan_notify_post_publication":"disabled","sucuriscan_notify_theme_editor":"disabled"}
