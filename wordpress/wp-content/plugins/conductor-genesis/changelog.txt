@@ -1,0 +1,17 @@
+==========================================
+Plugin: Conductor Genesis Add-On
+Author: Slocum Themes/Slocum Design Studio
+Author URI: https://conductorplugin.com/
+Current Version: 1.0.1
+==========================================
+
+
+1.0.1 // March 19 2015
+----------------------
+- Fixed infinite loop bug on single conducted pages that occurred on Genesis child themes
+- Introduce Conductor_Genesis::remove_action() and Conductor_Genesis::add_action()
+- Removed references to Custom Fields Add-On
+
+1.0.0 // March 18 2015
+----------------------
+- Initial Release (requires Conductor version 1.2.1 or above)

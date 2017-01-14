@@ -1,0 +1,37 @@
+==========================================
+Plugin: Conductor Display Pack Add-On
+Author: Slocum Themes/Slocum Design Studio
+Author URI: http://conductorplugin.com/
+Current Version: 1.0.2
+==========================================
+
+1.0.2 // October 24 2014
+------------------------
+- Fixed a bug in Firefox where Conductor Grid display output was not
+  clearing floats properly; Thanks Lise Galipeau
+
+1.0.1 // October 24 2014
+------------------------
+- Added checks to make sure Conductor Widget instance was not empty within
+  display classes (prevents PHP warnings)
+- Updated responsive CSS styling on Grid Display
+- Better logic on Table Display to remove default content wrapper elements
+- Added class_exists() check for updates which fixes a fatal PHP error when
+  Conductor_Updates class is not available due to Conductor update occurring
+
+1.0.0 // October 09 2014
+------------------------
+- Initial Release
+- Added support for updates
+- Fixed PHP error that stopped output/occurred when the first Conductor Widget in any sidebar
+  had a "List" display selected; Thanks Lisa Snyder
+- Fixed bug where Grid display would not output the correct CSS in any registered sidebar
+  outside of Conductor
+- Fixed Grid Display CSS and added base responsive styling; Thanks Jason Resnick
+- Fixed typo in admin activation error message
+- Fixed bug where widget CSS was not output when widgets were used in a non-Conductor sidebar
+- Better comment headers for functions
+
+0.0.1 // August 20 2014
+-----------------------
+- Initial Beta Release

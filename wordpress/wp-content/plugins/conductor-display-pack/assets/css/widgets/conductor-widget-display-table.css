@@ -1,0 +1,14 @@
+/**
+ * Conductor Widget Display Table Stylesheet
+ */
+
+.conductor-table {
+	width: 100%;
+	margin-bottom: 2em;
+	table-layout: fixed;
+}
+
+.conductor-widget.conductor-table-row {
+	display: table-row;
+	vertical-align: middle;
+}
