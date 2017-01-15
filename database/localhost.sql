@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost:3306
--- Generation Time: Jan 14, 2017 at 06:08 PM
+-- Generation Time: Jan 14, 2017 at 06:11 PM
 -- Server version: 10.0.27-MariaDB-cll-lve
 -- PHP Version: 5.6.20
 
@@ -28,6 +28,7 @@ USE `night_wpnh`;
 -- Table structure for table `wpnh_commentmeta`
 --
 
+DROP TABLE IF EXISTS `wpnh_commentmeta`;
 CREATE TABLE IF NOT EXISTS `wpnh_commentmeta` (
   `meta_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `comment_id` bigint(20) unsigned NOT NULL DEFAULT '0',
@@ -44,6 +45,7 @@ CREATE TABLE IF NOT EXISTS `wpnh_commentmeta` (
 -- Table structure for table `wpnh_comments`
 --
 
+DROP TABLE IF EXISTS `wpnh_comments`;
 CREATE TABLE IF NOT EXISTS `wpnh_comments` (
   `comment_ID` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `comment_post_ID` bigint(20) unsigned NOT NULL DEFAULT '0',
@@ -81,6 +83,7 @@ INSERT INTO `wpnh_comments` (`comment_ID`, `comment_post_ID`, `comment_author`, 
 -- Table structure for table `wpnh_links`
 --
 
+DROP TABLE IF EXISTS `wpnh_links`;
 CREATE TABLE IF NOT EXISTS `wpnh_links` (
   `link_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `link_url` varchar(255) NOT NULL DEFAULT '',
@@ -105,6 +108,7 @@ CREATE TABLE IF NOT EXISTS `wpnh_links` (
 -- Table structure for table `wpnh_options`
 --
 
+DROP TABLE IF EXISTS `wpnh_options`;
 CREATE TABLE IF NOT EXISTS `wpnh_options` (
   `option_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `option_name` varchar(191) NOT NULL DEFAULT '',
@@ -255,6 +259,7 @@ INSERT INTO `wpnh_options` (`option_id`, `option_name`, `option_value`, `autoloa
 -- Table structure for table `wpnh_postmeta`
 --
 
+DROP TABLE IF EXISTS `wpnh_postmeta`;
 CREATE TABLE IF NOT EXISTS `wpnh_postmeta` (
   `meta_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `post_id` bigint(20) unsigned NOT NULL DEFAULT '0',
@@ -278,6 +283,7 @@ INSERT INTO `wpnh_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VAL
 -- Table structure for table `wpnh_posts`
 --
 
+DROP TABLE IF EXISTS `wpnh_posts`;
 CREATE TABLE IF NOT EXISTS `wpnh_posts` (
   `ID` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `post_author` bigint(20) unsigned NOT NULL DEFAULT '0',
@@ -324,6 +330,7 @@ INSERT INTO `wpnh_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `po
 -- Table structure for table `wpnh_term_relationships`
 --
 
+DROP TABLE IF EXISTS `wpnh_term_relationships`;
 CREATE TABLE IF NOT EXISTS `wpnh_term_relationships` (
   `object_id` bigint(20) unsigned NOT NULL DEFAULT '0',
   `term_taxonomy_id` bigint(20) unsigned NOT NULL DEFAULT '0',
@@ -345,6 +352,7 @@ INSERT INTO `wpnh_term_relationships` (`object_id`, `term_taxonomy_id`, `term_or
 -- Table structure for table `wpnh_term_taxonomy`
 --
 
+DROP TABLE IF EXISTS `wpnh_term_taxonomy`;
 CREATE TABLE IF NOT EXISTS `wpnh_term_taxonomy` (
   `term_taxonomy_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `term_id` bigint(20) unsigned NOT NULL DEFAULT '0',
@@ -370,6 +378,7 @@ INSERT INTO `wpnh_term_taxonomy` (`term_taxonomy_id`, `term_id`, `taxonomy`, `de
 -- Table structure for table `wpnh_termmeta`
 --
 
+DROP TABLE IF EXISTS `wpnh_termmeta`;
 CREATE TABLE IF NOT EXISTS `wpnh_termmeta` (
   `meta_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `term_id` bigint(20) unsigned NOT NULL DEFAULT '0',
@@ -386,6 +395,7 @@ CREATE TABLE IF NOT EXISTS `wpnh_termmeta` (
 -- Table structure for table `wpnh_terms`
 --
 
+DROP TABLE IF EXISTS `wpnh_terms`;
 CREATE TABLE IF NOT EXISTS `wpnh_terms` (
   `term_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `name` varchar(200) NOT NULL DEFAULT '',
@@ -409,6 +419,7 @@ INSERT INTO `wpnh_terms` (`term_id`, `name`, `slug`, `term_group`) VALUES
 -- Table structure for table `wpnh_usermeta`
 --
 
+DROP TABLE IF EXISTS `wpnh_usermeta`;
 CREATE TABLE IF NOT EXISTS `wpnh_usermeta` (
   `umeta_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `user_id` bigint(20) unsigned NOT NULL DEFAULT '0',
@@ -447,6 +458,7 @@ INSERT INTO `wpnh_usermeta` (`umeta_id`, `user_id`, `meta_key`, `meta_value`) VA
 -- Table structure for table `wpnh_users`
 --
 
+DROP TABLE IF EXISTS `wpnh_users`;
 CREATE TABLE IF NOT EXISTS `wpnh_users` (
   `ID` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `user_login` varchar(60) NOT NULL DEFAULT '',
