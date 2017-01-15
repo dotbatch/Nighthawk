@@ -29,7 +29,7 @@ define('DB_USER', 'night_wpnh');
 define('DB_PASSWORD', 'p3]48RSj1@');
 
 /** MySQL hostname */
-define('DB_HOST', 'localhost');
+define('DB_HOST', 'nighthawk.co');
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
