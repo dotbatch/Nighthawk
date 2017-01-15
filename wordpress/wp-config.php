@@ -17,7 +17,8 @@
  *
  * @package WordPress
  */
-
+define('WP_HOME','http://localhost:7000');
+define('WP_SITEURL','http://localhost:7000');
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
 define('DB_NAME', 'night_wpnh');
@@ -29,7 +30,7 @@ define('DB_USER', 'night_wpnh');
 define('DB_PASSWORD', 'p3]48RSj1@');
 
 /** MySQL hostname */
-define('DB_HOST', 'localhost');
+define('DB_HOST', '198.199.98.44');
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
