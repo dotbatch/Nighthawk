@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost:3306
--- Generation Time: Jan 14, 2017 at 05:11 PM
+-- Generation Time: Jan 14, 2017 at 06:08 PM
 -- Server version: 10.0.27-MariaDB-cll-lve
 -- PHP Version: 5.6.20
 
@@ -19,6 +19,8 @@ SET time_zone = "+00:00";
 --
 -- Database: `night_wpnh`
 --
+CREATE DATABASE IF NOT EXISTS `night_wpnh` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+USE `night_wpnh`;
 
 -- --------------------------------------------------------
 
